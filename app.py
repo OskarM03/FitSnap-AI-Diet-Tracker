@@ -67,7 +67,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("""
-<div style="text-align: center; padding: 10px;">kla
+<div style="text-align: center; padding: 10px;">
     <h1 style="color: #2ECC71; font-size: 3.5rem; margin-bottom: 0px;">FitSnap 🍎</h1>
     <p style="color: #A0A0A0; font-size: 1.1rem;">Twój inteligentny dziennik makroskładników</p>
 </div>
