@@ -15,9 +15,9 @@ if 'zrobione_zdjecia' not in st.session_state:
     st.session_state.zrobione_zdjecia = []
 
 # Konfiguracja API (docelowo przenieść klucz do zmiennych środowiskowych)
-API_KEY = "TUTAJ_WKLEJ_SWOJ_KLUCZ" 
-klient = OpenAI(api_key="TUTAJ_WKLEJ_SWOJ_KLUCZ")
-DB_PATH = r"C:\Users\oskmi\Desktop\baza_jedzenia.db"
+API_KEY = st.secrets["OPENAI_API_KEY"]
+klient = OpenAI(api_key=API_KEY)
+DB_PATH = "baza_jedzenia.db"
 # Automatyczne tworzenie tabeli dla trwałego dziennika
 polaczenie = sqlite3.connect(DB_PATH)
 polaczenie.execute("""
